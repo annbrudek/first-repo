@@ -1,0 +1,28 @@
+{
+  "name": "kodilla-grunt",
+  "version": "1.0.0",
+  "description": "grunt project",
+  "main": "index.js",
+  "scripts": {
+    "test": "kodilla-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annbrudek/first-repo.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Anna Brudek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annbrudek/first-repo/issues"
+  },
+  "homepage": "https://github.com/annbrudek/first-repo#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
