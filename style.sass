@@ -1,0 +1,730 @@
+$fonts: 'Raleway', sans-serif
+$major-colour: #34b729
+$minor-colour: #313234
+$shadow_75: rgba(0, 0, 0, 0.75)
+=box-shadow($value)
+    -webkit-box-shadow: ($value)
+    -moz-box-shadow: ($value)
+    box-shadow: ($value)    
+
+*
+    box-sizing: border-box
+
+
+body 
+    margin: 0
+    font-family: $fonts
+    font-size: 16 px
+
+
+/* CLEARFIX */
+
+.row
+    &:before,
+    &:after 
+        content: ""
+        display: table
+
+
+.row
+    &:after 
+        clear: both
+
+
+/* HEADER*/
+
+header 
+    background-color: $minor-colour
+    min-height: 50px 
+    width:  100%
+    position: fixed
+    z-index: 1
+    +box-shadow (0px 5px 15px 0px $shadow_75)
+ 
+.container 
+    margin: 0 auto
+
+
+header
+    nav
+        img 
+            padding: 5px 0
+            margin-left: 100px
+            
+        ul 
+            margin: 0
+            margin-right: 50px
+            padding: 0
+            list-style-type: none
+            float: right
+
+        li
+            display: inline-block
+                
+        a
+            line-height: 65px
+            padding: 0 20px
+            color: #fff
+            font-weight: 700
+            text-decoration: none
+            text-transform: uppercase
+            display: block
+                    
+            &:hover
+                color: $major-colour
+
+/* HERO */
+
+.hero 
+    height: 600px
+    background-image: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/KUC7NN6Z0V.jpg)
+    background-position: center
+    background-size: cover
+    position: relative
+
+    .slogan 
+        float: right
+        background-color: rgba(49,51,50,0.75)
+        width: 550px
+        position: absolute
+        top: 40%
+        right: 0
+        padding: 30px
+  
+    h2 
+        margin: 0
+        text-transform: uppercase
+        color: #fffeff
+        font-weight: 200
+        font-size: 30px
+
+
+    h1 
+        margin: 0
+        text-transform: uppercase
+        color: #fffeff
+        font-weight: 700
+        font-size: 30px
+
+
+.circles 
+    position: relative
+    text-align: center
+    top: 550px
+    margin-left: 45%
+
+
+.circle 
+    height: 15px
+    width: 15px
+    line-height: 20px
+    border-radius: 50%
+    background-color: #747c7e
+    float: left
+    margin: 10px
+
+.circle
+    &:hover,
+    .circle--active 
+        background-color: #fff
+        cursor: pointer
+
+
+.circle--active
+    &:hover  
+        cursor: default
+
+
+
+/* GRID */
+
+.col-1 
+    width: 8.33%
+.col-2 
+    width: 16.66%
+.col-3 
+    width: 25%
+.col-4 
+    width: 33.33%
+.col-5 
+    width: 41.66%
+.col-6 
+    width: 50%
+.col-7 
+    width: 58.33%
+.col-8 
+    width: 66.66%
+.col-9 
+    width: 75%
+.col-10 
+    width: 83.33%
+.col-11 
+    width: 91.66%
+.col-12 
+    width: 100%
+
+/* BENEFITS */
+
+[class*="col-"]
+    float: left
+
+
+.icon 
+    width: 130px
+    height: 130px
+    border-radius: 20px
+    margin: 0 auto
+    color: #fff
+    background-color: $minor-colour
+    text-align: center
+    padding-top: 25px
+    &:hover
+        background-color: $major-colour
+	
+        + h3 
+            color: $major-colour
+
+.fa 
+    font-size: 80px
+
+
+.benefits 
+    h3 
+        text-transform: uppercase
+        font-weight: 900
+        font-size: 25px
+        margin: 40px 0 10px
+        text-align: center
+        color: #002f32
+
+    p 
+        color: #a0a0a0
+        font-weight: 500
+        padding: 20px
+        text-align: center
+
+
+
+    >.container 
+        margin: 50px auto
+        max-width: 1200px
+
+
+
+/* TRIPS */
+
+.trips-info 
+    
+    h2 
+        text-transform: uppercase
+        font-size: 40px
+        font-weight: 900
+        color: #002f32
+        text-align: center
+
+    p 
+        font-size: 25px
+        margin: 0 auto
+        padding: 20px
+        line-height: 35px
+        color: #313332
+        text-align: center
+
+
+/* GALLERY*/
+
+.trips-gallery 
+    .container 
+        width: 100%
+
+
+.t1 
+    background-image: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/HVP34N3K0O.jpg)
+
+.t2 
+    background-image: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/WUQQC93LM2.jpg)
+
+
+.t3 
+    background-image: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/AM7WT3U3UP.jpg)
+
+
+.t4 
+    background-image: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/N1AJGEPA5Y.jpg)
+
+.t5 
+    background-image: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/FMMPF7IYSB.jpg)
+
+
+.t6 
+    background-image: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/CFNIT6PN9B.jpg)
+
+
+.t7 
+    background-image: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/484XDRKBIP.jpg)
+
+.t8 
+    background-image: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/ED2MUVHJGL.jpg)
+    
+.trip 
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    min-height: 300px
+
+
+.layer i.fa 
+    font-size: 20px
+    padding: 5px
+    margin: 8px
+   
+
+
+.gallery-col-2 
+    max-height: 350px
+    float: left
+    width: 20%
+    padding: 0
+      
+    
+
+.gallery-col-4 
+    max-height: 350px
+    float: left
+    width: 40%
+    padding: 0
+    
+
+.layer 
+    text-align: center
+    height: 100%
+    line-height: 300px
+    background-color: transparent
+    color: transparent
+
+.layer
+    > i.fa 
+        visibility: hidden
+        height: 30px
+        width: 30px
+        background-color: $major-colour
+        border-radius: 5px
+
+
+[class^="gallery-col-"]
+    &:hover 
+        .layer 
+            background-color: rgba(0,0,0,0.5)
+            color: #fff
+            cursor: pointer
+
+            >i.fa 
+                visibility: visible
+
+                &:hover 
+                    background-color: rgba(0,0,0,0.7)
+
+
+/* TRAVELLERS */
+
+.travellers-info 
+    h2 
+        text-transform: uppercase
+        color: #002f32
+        font-size: 40px
+        margin: 0 0 10px
+        text-align: center
+        padding: 20px
+        font-weight: 900
+
+    p 
+        font-size: 25px
+        margin: 0
+        padding: 20px
+        line-height: 35px
+        color: $minor-colour
+        text-align: center
+
+
+.tr1 
+    background-image: url(http://i.imgur.com/PFKhMSs.jpg?1)
+
+
+.tr2 
+    background-image: url(http://i.imgur.com/8nyWfiV.jpg)
+
+
+.tr3 
+    background-image: url(http://i.imgur.com/EhIxaxJ.jpg)
+
+
+.tr4 
+    background-image: url(http://i.imgur.com/jAr1avd.jpg)
+
+
+.traveller-photo 
+    margin: 0 auto
+    width: 250px
+    height: 250px
+    border-radius: 50%
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+
+
+.travellers 
+    h2 
+        margin: 10px
+        text-align: center
+        font-size: 25px
+        color: #5d5d5a
+
+    >.container 
+        max-width: 1200px
+        margin: 50px auto
+
+
+.traveller-photo
+    &:hover 
+        .tr-layer 
+            background-color: rgba(0,0,0,0.5)
+            color: #fff
+            cursor: pointer
+
+
+.tr-layer 
+    text-align: center
+    line-height: 250px
+    font-weight: 900
+    color: transparent
+    border-radius: 50%
+
+
+/* TABLET */
+
+.tablet 
+    height: 400px
+    margin-top: 100px
+    padding: 0
+    background-image: url(https://lindseypbrackett.files.wordpress.com/2016/11/stocksnap_v94l2tomdx.jpg?w=1200)
+    background-position: center
+    background-size: cover
+    color: #fff
+
+    >.container
+        >.row
+            >.col-4 
+                margin: 0
+                height: 400px
+                position: relative
+
+                >img 
+                    position: absolute
+                    height: 300px
+                    left: 25%
+                    bottom: 0
+
+            >.col-8 
+                margin: 150px 0 0
+                position: relative
+                width: 60%
+                height: auto
+                left: 5%
+
+.tablet
+    h2 
+        text-transform: uppercase
+        font-size: 30px
+        font-weight: 700
+        margin: 0
+        
+.tablet 
+    button 
+        padding: 10px
+        letter-spacing: 2px
+        font-size: 16px
+        background-color: transparent
+        color: #fff
+        border: 2px solid #fff
+        text-transform: uppercase
+        font-weight: bold
+
+
+    
+    .col-7 
+        width: 58%
+        line-height: 30px
+
+        p 
+            font-size: 20px
+            font-weight: 500
+            padding: 0
+
+    .col-5 
+        width: 40%
+        line-height: 30px
+        margin-left: 10px
+
+
+/* NUMBERS */
+
+.numbers 
+    margin-top: 50px
+
+    >.container 
+        max-width: 900px
+
+        .row
+            >.col-3 
+                padding: 10px
+                text-align: center
+                margin: 0
+
+                h2 
+                    font-weight: 900
+                    font-size: 50px
+                    color: #002f32
+                    margin: 0
+
+                p 
+                    text-transform: uppercase
+                    color: #34b729
+                    font-size: 25px
+                    font-weight: 800
+
+
+/* CONTACT */
+
+.contact 
+    margin-top: 50px
+    background-color: #313234
+
+    >.container 
+        max-width: 1200px
+        width: 100%
+        color: #fff
+        padding: 20px
+
+    h2 
+        text-transform: uppercase
+        font-weight: 900
+        position: relative
+
+        &:after 
+            display: inline-block
+            content: ""
+            height: 2px
+            background-color: #fff
+            position: absolute
+            width: 30%
+            margin-left: 10px
+            top: 40%
+    
+    p 
+        font-weight: 500
+        width: 90%
+        line-height: 30px
+        margin-top: 0
+
+    .col-3 
+        p 
+            font-weight: 900
+   
+
+    i.fa 
+        color: #fff
+        background-color: $major-colour
+        height: 40px
+        width: 40px
+        font-size: 25px
+        text-align: center
+        float: left
+        margin: 10px
+        margin-left: 0
+        line-height: 40px
+        border-radius: 5px
+        &:hover 
+            cursor: pointer
+            background-color: #e6e6e6
+
+    .youtube
+        &:hover 
+            i.fa 
+                color: #fc1717
+
+    .twitter
+        &:hover 
+            i.fa 
+                color: #1798fc
+
+
+    .instagram
+        &:hover 
+            i.fa 
+                color: #a74d2e
+
+    .google-plus
+        &:hover 
+            i.fa 
+                color: #f60b0b
+
+    .pinterest
+        &:hover 
+            i.fa 
+                color: #ed2328
+
+    .facebook
+        &:hover 
+            i.fa 
+                color: #1010ab
+
+footer 
+    background-color: #1f2022
+    text-align: center
+    color: #fff
+    display: inline-block
+    width: 100%
+    font-weight: 500
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) 
+    header
+        > nav 
+            img 
+                display: none
+     
+            ul 
+                margin-right: 0
+
+            >.row>.col-8 
+                width: 100%
+                display: flex
+                justify-content: center
+ 
+    .contact 
+        h2
+            &:after 
+                display: none
+
+    .travellers
+        >.container
+            >.row
+                >.col-3 
+                    width: 50%
+
+    .tablet
+        >.container
+            >.row
+                >.col-4
+                    width: 15%
+                    >img 
+                        display: none
+
+    
+                >.col-8 
+                    top: -50px
+
+    .numbers
+        >.container
+            >.row
+                >.col-3 
+                    width: 50%
+
+    .tablet 
+        .col-5 
+            display: none
+
+
+
+@media (max-width: 767px) 
+    header
+        >nav
+            ul
+                >li 
+                    display: block
+
+    nav 
+        text-align: center
+       
+    header 
+        position: absolute
+
+    .hero 
+        height: 600px
+
+    .circles 
+        display: none
+
+    .hero 
+        .slogan 
+            width: 80%
+            height: auto
+            top: 60%
+            margin: 0 auto
+
+    .hero 
+        h1 
+            font-size: 20px
+    
+    
+    .tablet 
+        display: none
+
+    .contact
+        >.container
+            >.row
+                >.col-4 
+                    width: 100%
+
+    
+    .gallery-col-4, 
+    .gallery-col-2 
+        width: 100%
+
+    .trips-info 
+        p 
+            font-size: 20px
+
+        h2 
+            font-size: 30px
+
+   
+    .tablet 
+        .col-7 
+            p
+                line-height: 25px
+
+    .travellers-info
+        p 
+            font-size: 20px
+
+        h2 
+            font-size: 30px      
+
+    .numbers
+        >.container
+            >.row
+                >.col-3 
+                    width: 100%
+
+
+
+@media (max-width: 540px) 
+    .benefits
+        >.container
+            >.row
+                >.col-4 
+                    width: 100%
+
+    .travellers
+        >.container
+            >.row
+                >.col-3 
+                    width: 100%
+
+
+
+
+
